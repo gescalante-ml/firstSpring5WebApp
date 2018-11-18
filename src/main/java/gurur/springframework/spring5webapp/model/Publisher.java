@@ -15,18 +15,8 @@ public class Publisher {
     private String name;
     private String address;
 
-    @OneToOne(mappedBy = "publisher")
-    private Book book;
-
-    public Book getBook() {
-        return book;
+    public Publisher() {
     }
-
-    public void setBook(Book book) {
-        this.book = book;
-    }
-
-    public Publisher(){}
 
     public Publisher(String name, String address) {
         this.name = name;
